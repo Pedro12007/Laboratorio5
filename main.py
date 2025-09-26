@@ -15,6 +15,8 @@ while True:
             print('Deben ser al menos 2 movimientos.')
             continue
         print()
+        print(f'Cantidad de movimientos esperados {2**mov-1}')
+        print()
         break
     except ValueError:
         print('Debe ser un número.\n')
