@@ -7,3 +7,16 @@ def hanoi(n, a, b, c):
     movimientos += 1
     movimientos += hanoi(n - 1, b, a, c)
     return movimientos
+
+while True:
+    try:
+        mov = int(input('Ingrese la cantidad de movimientos: '))
+        if mov < 2:
+            print('Deben ser al menos 2 movimientos.')
+            continue
+        print()
+        break
+    except ValueError:
+        print('Debe ser un número.\n')
+
+hanoi(mov, 'A', 'B', 'C')
